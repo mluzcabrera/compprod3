@@ -1,12 +1,15 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
-
 on:
   push:
     branches:
-      - '**'
-
+      - "**"
+  workflow_dispatch:
+    inputs:
+      Target_env:
+        type: string
+        description: This is for naming the target environment
 jobs:
   build:
     steps:

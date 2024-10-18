@@ -10,11 +10,6 @@ jobs:
     services:
       redis:
         image: docker://redis:7-alpine3.20
-        ports:
-        - 6379
-        healthcheck:
-          cmd: "redis-cli ping"
-          timeout-seconds: 5
 
     steps:
       # Wait for Redis to be ready

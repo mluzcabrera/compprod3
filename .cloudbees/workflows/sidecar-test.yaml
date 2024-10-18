@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    if: ${{ vars.workflow_execution_env == 'staging' }}
     services:
       redis:
         image: docker://redis:7-alpine3.20

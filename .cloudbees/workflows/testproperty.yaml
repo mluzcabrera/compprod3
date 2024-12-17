@@ -11,6 +11,7 @@ jobs:
         shell: sh
         run: |
           echo "testpropertymlcb: ${{ vars.testpropertymlcb }}"
+          echo "testpropertymlcbONLYTOP: ${{ vars.testpropertymlcbONLYTOP }}"
   with-env:
     environment: mlcb
     steps:
@@ -19,3 +20,4 @@ jobs:
         shell: sh
         run: |
           echo "testpropertymlcb: ${{ vars.testpropertymlcb }}"
+          echo "testpropertymlcbONLYTOP: ${{ vars.testpropertymlcbONLYTOP }}"
